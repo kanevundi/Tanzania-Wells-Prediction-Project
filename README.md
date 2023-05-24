@@ -1,5 +1,3 @@
-![1684494537131](image/README/1684494537131.png)
-
 # TANZANIA WATER WELLS
 
 Written by Kane Vundi
@@ -12,7 +10,7 @@ Phase 3 Project
 
 Access to clean and safe drinking water is a fundamental human right and a critical aspect of sustainable development. In many regions of the world, including Tanzania, millions of people still lack access to reliable water sources, leading to numerous health, economic, and social challenges. Addressing this issue requires effective planning and resource allocation to ensure the sustainable provision of clean water to communities in need.
 
-In the context of Tanzania, where water scarcity and inadequate infrastructure remain persistent problems, predictive modeling emerges as a promising approach to enhance water resource management and optimize the drilling of new wells. By leveraging historical data, advanced statistical techniques, and machine learning algorithms, we aim to develop a robust predictive model that can accurately estimate the potential success and yield of water wells across different regions in Tanzania..
+In the context of Tanzania, where water scarcity and inadequate infrastructure remain persistent problems, predictive modeling emerges as a promising approach to enhance water resource management and optimize the drilling of new wells. By leveraging historical data, advanced statistical techniques, and machine learning algorithms, we aim to develop a robust predictive model that can accurately estimate the potential success and yield of water wells across different regions in Tanzania.
 
 ---
 
@@ -36,14 +34,14 @@ The existing approach to drilling water wells in Tanzania relies heavily on expe
 
 ### Success Criteria
 
-##### Business Success Criteria
+#### Business Success Criteria
 
 * The predictive modeling project should lead to a measurable increase in the success rate of water well installations in Tanzania.
 * The project should correctly identify functionality of a well and determine its viability.
 * The success of the project should be measured by the satisfaction and adoption of the predictive model by key stakeholders, including policymakers, government agencies, and humanitarian organizations.
 * The project should contribute to the long-term sustainability of water access in Tanzania. This can be assessed by evaluating the scalability and replicability of the predictive model.
 
-##### Project Success Criteria
+#### Project Success Criteria
 
 Generating a model that will be able to correctly predict the quality status of the wells in Tanzania with an accuracy of 80%.
 
@@ -51,11 +49,9 @@ Generating a model that will be able to correctly predict the quality status of 
 
 ## 2. Data Understanding
 
-### Overview
-
 In this project we shall use a dataset containing information about existing water wells in Tanzania sourced from an ongoing DrivenData competition.
 
-#### 2.1 Data Description
+### 2.1 Data Description
 
 The dataset contains 59,400 records and spans 40 columns. Of these columns, we identified 31 to be categorical, and 9 as numerical. We were able to further group the columns into the general features being captured. A description of all features can be found [here](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/).
 
@@ -65,11 +61,11 @@ The dataset contains 59,400 records and spans 40 columns. Of these columns, we i
 
 This dataset analysis and classification will help our stakeholders to improve maintenance of the present water wells or give useful information for future wells.
 
-### 3.1 Data Selection.
+### 3.1 Data Selection
 
 I analyzed the data to identify the most relevant features that significantly influence the functinality of water wells. I achieved this by exploratory data analysis, correlation analysis, domain knowledge and selected a subset of features that exhibit strong relationships with well outcomes and discard irrelevant or redundant variables.
 
-### 3.2 Data Cleaning.
+### 3.2 Data Cleaning
 
 A number of the features overlap, including **waterpoint_type** and **waterpoint_type_group** as well as **extraction_type**, **extraction_type_group**, and **extraction_type_class**. Due to the same information being represented at several levels, these would cause multicollinearity concerns, hence in order to decrease the dimensionality of the data, the most generic columns for each overlapped column were retained.
 
@@ -91,7 +87,7 @@ I used pipelines to scale the data and then fit it to the model. We then used cr
 
 ## 6. Conclusion
 
-The accuracy of my random forest classifier and KNearest Neighbors Classifier was 78% and 77% respectively. While it is still a good predictive model, I would like to undertake further feature engineering to boost this recall score if I had more time. We achieved our objectives to be able to predict the functional wells and had a conclusive accuracy score.
+The accuracy of my random forest classifier and KNearest Neighbors Classifier was 78% and 77% respectively. While it is still a good predictive model, I would like to undertake further feature engineering to boost the recall scores if I had more time. I achieved our bjectives to be able to predict the functional wells and had a conclusive accuracy score.
 
 ## 7. Recommendations
 
